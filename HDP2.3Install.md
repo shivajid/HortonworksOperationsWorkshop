@@ -1,5 +1,16 @@
 ## HDP CentOS Node
-In this step we will start creating the HDP Compute Cluster. We will create VM with CentOS 7. Deploy HDP 2.3 and connect to Isilon. We will create VM from CentOS iso.
+In this step we will start creating the HDP Compute Cluster. We will create VM with CentOS 6.7. Deploy HDP 2.3 with Ambari 2.1 on a single node. 
+
+There are 2 modes of doing this lab
+a) On local CentOS VM (Shared in the page)
+b) On Azure trial Account. Follow the Azure Market place to create a Azure VM.
+c) CentOS Docker Image. Use the DockerFile in the github.
+
+All three of the above versions will create a CentOS image to run your labs on. The refernce document for Installing HDP is in the official Hortonworks documentation
+
+http://docs.hortonworks.com/HDPDocuments/Ambari-2.1.2.0/bk_Installing_HDP_AMB/content/index.html
+
+Following Lab Instructions are on CentOS VM. These instructions are for reference only.
 
 ### OS setup
 
@@ -39,7 +50,8 @@ NETWORKING=yes
 HOSTNAME=hdpdemo.hortonworks.com
 </pre>
 
-+ Download the following scripts. This helps in automated deployment of Ambari and its agents.
++ Download the following scripts. This helps in automated deployment of Ambari and its agents. This is a Hortonworks field generated scripts. These are for lab puprose only. They do the OS pre-checks and cleanup and Installs Ambari Server and the Ambari Agent. You could alternatively follow the official documentation.
+
 <pre>
 	wget https://www.dropbox.com/s/s91lintb4xhrqic/ambariInstall.sh?dl=0 -O ambariInstall.sh
 	$ chmod +x ambariInstall.sh
@@ -52,7 +64,7 @@ Run the scripts
 
 ###### [Note:- The above scripts installs Ambari Server and the agent and starts up the ambari server. If you do not want to run the above steps you can do it manually by following the documentation from http://docs.hortonworks.com.]
 
-The next steps is use the Ambari Install to install HDP.
+The next steps is use the Ambari to install HDP.
 
 + Browse to http://__REPLACE__$ambarihost:8080/.
 + Login using the following account:
@@ -74,26 +86,27 @@ Click Next
 
 ### Install Options:
 
-Specify your Linux hosts that will run HDP for your HDP cluster installation in the Target Hosts text box and the Isilon Zone Name Node IP Address.
-Choose Perform Manual install
-Click Next. You may see a warnings. Ignore them.
++ Specify your Linux hosts that will run HDP for your HDP cluster installation in the Target Hosts text box.
+
++ Choose Perform Manual install
+
++ Click Next. You may see a warnings. Ignore them for the lab only.
 
 ### Choose Services: 
-Select all the services. There are more services in HDP 2.3 than in this screenshot
+
+Select all the services
 
 ### Assign Masters:
 
-+ Assign NameNode and SNameNode components to the Isilon. 
-+ Assign the rest of the nodes to HDP components
++ Assign all components to the master nodes to HDP components
 
 ### Assign Slaves and Clients: 
 
-Assign the DataNode to Isilon host (No Client)
 Rest of the components are assigned to the Compute node (HDP Sandbox)
 
 ### Customize the services
 
-+ Change the port for webhdfs to 8082 under HDFS. The default address is 50070.
++ All the services with redmark needs attention. Supply a password of your choice.
 
 <pre>
 dfs.namenode.http-address = __REPLACE__hostname__:8082
@@ -103,7 +116,11 @@ dfs.namenode.http-address = __REPLACE__hostname__:8082
 
 + Review: Carefully review your configuration and then click Deploy.
  
-+ After a successful installation, Ambari will start and test all of the selected services.  Sometime it may fail for the first time around. You may need to retry couple of times. Review the Install, Start and Test page for any warnings or errors. It is recommended to correct any warnings or errors before continuing.
++ After a successful installation, Ambari will start and test all of the selected services.  
++ 
++ Sometime it may fail for the first time around. This is mostly due to timeouts. You may need to retry couple of times. If the services do not start, go to the Service tab and restart each of the services.
+
++ Review the Install, Start and Test page for any warnings or errors. It is recommended to correct any warnings or errors before continuing.
 
 ### Validation
 
