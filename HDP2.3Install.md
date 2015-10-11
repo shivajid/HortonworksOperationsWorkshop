@@ -41,7 +41,6 @@ Assign a hostname to your machine (I will use hdpdemo.hortonworks.com)
 		Map the ipaddress in step a to the hostname
 	$ vi /etc/sysconfig/network
 	
-	vi /etc/sysconfig/network
 	
 change hostname from localhost.localdomain to hdpdemo.hortonworks.com
 
