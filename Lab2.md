@@ -85,6 +85,22 @@ Use the Dockerfile in the repo to create a CentOS image for HDP Slave Node
   $docker ps
 </code> </pre>
 
+
+#### Setup the ssh keys
+<pre>
+<code>
+$service sshd start
+$ssh-copy-id root@node0
+$ ifconfig
+
+</code>
+</pre>
+
++ Add an entry for node0 to the host /etc/host file
++ Update /etc/hosts/ file for <b>node0</b> Docker Container  for ip address mapping for hdpdemo.hortonworks.com
+
+Services on the node may fail to start. It looks for /usr/java/default which is missing. Create an appropriate link to /usr/java/default 
+
 #  Install Slave Node on the docker images
 
 + Use the Ambari wizard to add the docker container. 
@@ -113,20 +129,7 @@ Use the Dockerfile in the repo to create a CentOS image for HDP Slave Node
 + 
 ![Start Service](/images/Screen Shot 2015-10-11 at 10.58.24 PM.png)
 
-#### Setup the ssh keys
-<pre>
-<code>
-$service sshd start
-$ssh-copy-id root@node0
-$ ifconfig
 
-</code>
-</pre>
-
-+  Add an entry for node0 to the host /etc/host file
-+ Update /etc/hosts/ file for <b>node0</b> Docker Container  for ip address mapping for hdpdemo.hortonworks.com
-
-Services on the node may fail to start. It looks for /usr/java/default which is missing. Create an appropriate link to /usr/java/default 
 
 # Docker Reference Commands
 +  Stop a container
