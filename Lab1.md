@@ -99,32 +99,41 @@ Click Next
 ![](/images/Screen%20Shot%202015-10-11%20at%2012.48.24%20PM.png)
 + Choose Perform Manual install
 
+![OK](/images/Screen%20Shot%202015-10-11%20at%2012.48.41%20PM.png)
+
 + Click Next. You may see a warnings. Ignore them for the lab only.
+![Warning] (/images/Screen Shot 2015-10-11 at 12.49.25 PM.png)
+
 
 ### Choose Services: 
 
 Select all the services
-
+![Select Services](/images/Screen%20Shot%202015-10-11%20at%2012.49.50%20PM.png)
 ### Assign Masters:
 
 + Assign all components to the master nodes to HDP components
-
+![Assign Services](/images/Screen%20Shot%202015-10-11%20at%2012.50.09%20PM.png)
 ### Assign Slaves and Clients: 
+![Assign Slave](/images/Screen%20Shot%202015-10-11%20at%2012.50.36%20PM.png)
 
-Rest of the components are assigned to the Compute node (HDP Sandbox)
+
 
 ### Customize the services
 
 + All the services with redmark needs attention. Supply a password of your choice.
-
-
-
 + Enter the password for all the required services
+![Correction](/images/Screen%20Shot%202015-10-11%20at%2012.50.49%20PM.png)
 
 + Review: Carefully review your configuration and then click Deploy.
  
+![Deploy](/images/Screen%20Shot%202015-10-11%20at%2012.51.37%20PM.png)
+
 + After a successful installation, Ambari will start and test all of the selected services.  
-+ 
+
+![Install](/images/Screen Shot 2015-10-11 at 12.51.58 PM.png)
+
++ Click Next and then Finish.
+
 + Sometime it may fail for the first time around. This is mostly due to timeouts. You may need to retry couple of times. If the services do not start, go to the Service tab and restart each of the services.
 
 + Review the Install, Start and Test page for any warnings or errors. It is recommended to correct any warnings or errors before continuing.
