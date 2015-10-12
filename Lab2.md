@@ -70,7 +70,7 @@ Use the Dockerfile in the repo to create a CentOS image for HDP Slave Node
 </code>
 </pre>
 
-+ Create the docker instance. In this command we are opening all the ports. To open a port or a set of ports to teh has
++ Create the docker instance. 
 
 <pre>
 <code>
@@ -78,13 +78,16 @@ Use the Dockerfile in the repo to create a CentOS image for HDP Slave Node
 </code>
 </pre>
 
-+  User CTRL (P+Q) to exit the container. Do use exit.
++  User CTRL (P+Q) to exit the container. <b>Do not use exit</b> command.
 
 + List all the running containers
 <pre><code>
   $docker ps
 </code> </pre>
+
 #  Install Slave Node on the docker images
+
++ Use the Ambari wizard to add this host. 
 
 + Under the Hosts -> Actions
 ![Add Hosts](/images/Screen%20Shot%202015-10-11%20at%2010.48.10%20PM.png)
@@ -104,11 +107,8 @@ Use the Dockerfile in the repo to create a CentOS image for HDP Slave Node
 ![Install](/images/Screen%20Shot%202015-10-11%20at%2010.58.00%20PM.png)
 ![install](/images/Screen Shot 2015-10-11 at 10.58.07 PM.png)
 
-
-
-+ Use the Ambari wizard to add this host. 
-
 ## Issues and Resolution
+
 #### Setup the ssh keys
 <pre>
 <code>
