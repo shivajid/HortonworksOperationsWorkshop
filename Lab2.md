@@ -4,7 +4,8 @@ In this Lab we are going to use a Docker Container to create second node to the 
 
 <pre>
 a) We are going to Install Docker in the CentOS VM
-b) Create Centos VM,ready to add a node
+b) Create Centos Docker Image using a DockerFil
+c) Instantiate a container
 c) Use the Ambari to add a Node
 </pre>
 
