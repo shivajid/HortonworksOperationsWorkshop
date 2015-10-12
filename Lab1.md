@@ -78,6 +78,10 @@ Password: admin
 
 
 + Login to Ambari Server.
+++ admin/admin
+
+![Ambari login](/images/Screen%20Shot%202015-10-11%20at%2012.47.16%20PM.png)
+
 + Welcome: Specify the name of your cluster. Lets call it <b>hdpdemo</b>
 
 Click Next
