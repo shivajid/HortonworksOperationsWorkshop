@@ -1,4 +1,13 @@
 # docker
+
+In this Lab we are going to use a Docker Container to create second node to the one already installed.
+
+<pre>
+a) We are going to Install Docker in the CentOS VM
+b) Create Centos VM,ready to add a node
+c) Use the Ambari to add a Node
+</pre>
+
 ## Install Docker Binaries
 
 ### CentOS 7
