@@ -109,10 +109,14 @@ Use the Dockerfile in the repo to create a CentOS image for HDP Slave Node
 
 ## Issues and Resolution
 
++ If a Service does not start up. Start the individual Service on the node.
++ 
+![Start Service](/images/Screen Shot 2015-10-11 at 10.58.24 PM.png)
+
 #### Setup the ssh keys
 <pre>
 <code>
-$service sshd star
+$service sshd start
 $ssh-copy-id root@node0
 $ ifconfig
 
