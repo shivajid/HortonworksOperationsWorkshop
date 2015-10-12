@@ -3,7 +3,7 @@
 
 ### CentOS 7
 The following steps are to setup docker on CentOS 7.
-
+<pre>
 <code>
    $ sudo yum update
 
@@ -13,6 +13,7 @@ The following steps are to setup docker on CentOS 7.
 
    $ sudo docker run hello-world
 </code>
+</pre>
 
 To create the docker group and add your user:
 * Log into Centos as a user with sudo privileges.
