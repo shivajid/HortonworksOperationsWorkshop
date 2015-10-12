@@ -83,7 +83,11 @@ Password: admin
 ![Ambari login](/images/Screen%20Shot%202015-10-11%20at%2012.47.16%20PM.png)
 
 + Welcome: Specify the name of your cluster. Lets call it <b>hdpdemo</b>
+![Create your Cluster](images/Screen Shot 2015-10-11 at 12.47.33 PM.png)
 
++ Select the name of the cluster as HDP Demo
+
+!(images/Screen Shot 2015-10-11 at 12.47.50 PM.png)
 Click Next
 
 + Select Stack: Select the HDP 2.3 stack.
@@ -92,7 +96,7 @@ Click Next
 ### Install Options:
 
 + Specify your Linux hosts that will run HDP for your HDP cluster installation in the Target Hosts text box.
-
+![](/images/Screen%20Shot%202015-10-11%20at%2012.48.24%20PM.png)
 + Choose Perform Manual install
 
 + Click Next. You may see a warnings. Ignore them for the lab only.
@@ -113,9 +117,7 @@ Rest of the components are assigned to the Compute node (HDP Sandbox)
 
 + All the services with redmark needs attention. Supply a password of your choice.
 
-<pre>
-dfs.namenode.http-address = __REPLACE__hostname__:8082
-</pre>
+
 
 + Enter the password for all the required services
 
