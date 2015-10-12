@@ -87,7 +87,7 @@ Use the Dockerfile in the repo to create a CentOS image for HDP Slave Node
 
 #  Install Slave Node on the docker images
 
-+ Use the Ambari wizard to add this host. 
++ Use the Ambari wizard to add the docker container. 
 
 + Under the Hosts -> Actions
 ![Add Hosts](/images/Screen%20Shot%202015-10-11%20at%2010.48.10%20PM.png)
