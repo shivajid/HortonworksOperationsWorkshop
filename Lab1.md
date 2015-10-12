@@ -30,13 +30,16 @@ Assign Disk - 40 GB
 
 https://www.dropbox.com/s/njx0zwmic7og6db/CentOS-6.7-x86_64-bin-DVD1.iso?dl=0
 
-Use the iso to create an new VM. Assign an admin user and password. You should be able to use the same password for your <b>root</b> user.
+Use the iso to create an new VM. Assign an admin user and password. 
+You should be able to use the same password for your <b><code>root</code></b> user.
 
-Next Steps use the following Scripts to create single node VM. Once you have the centos up and running, get the IP address of the machine.
+
 
 ### Installation Steps
 
-+ ssh into the machine as root. Get the ipaddress of the machine
++ Using a terminal <code>ssh<code> into the machine as root. 
+
++ Get the ipaddress of the machine
 
 <pre>
 	$ ifconfig
