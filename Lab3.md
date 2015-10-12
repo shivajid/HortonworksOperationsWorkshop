@@ -34,6 +34,8 @@ git clone https://github.com/abajwa-hw/security-workshops
 - To configure Ambari to sync with LDAP see steps [here](https://github.com/abajwa-hw/security-workshops/blob/master/Setup-Ambari.md#authentication-via-ldap-or-active-directory)
 - To configure user views to work on secured cluster see steps [here](https://github.com/abajwa-hw/security-workshops/blob/master/Setup-Ambari.md#setup-views-on-kerborized-setup)
              
+
+# Optional 
 #### Part 2: Authorization/Audit
 Setup Ranger and authorization policies and review audit reports from a Rangers Policy Manager on HDP 2.3 using steps [here](https://github.com/abajwa-hw/security-workshops/blob/master/Setup-ranger-23.md)
             
