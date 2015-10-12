@@ -92,7 +92,7 @@ Use the Dockerfile in the repo to create a CentOS image for HDP Slave Node
 + Under the Hosts -> Actions
 ![Add Hosts](/images/Screen%20Shot%202015-10-11%20at%2010.48.10%20PM.png)
 
-+ Choose the name of the host. In our lab case it is <b><code>node0</code></b>Select you private ssh key [log into the docker container, cat the id_rsa key and provide the information under Provide your ssh key. I
++ Choose the name of the host. In our lab case it is <b><code>node0</code></b>Select you private ssh key [log into the docker container, cat the id_rsa key and provide the information under Provide your ssh key. 
 ![Put the node information](/images/Screen%20Shot%202015-10-11%20at%2010.52.10%20PM.png) 
 
 + Ignore the host checks for the lab. (Please take care in your actual lab sessions)
