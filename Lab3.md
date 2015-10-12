@@ -1,18 +1,33 @@
 ## Enable security on HDP 2.3 single node setup using *FreeIPA* as LDAP
 
-
 #### Setup LDAP: Install HDP 2.3 cluster and install FreeIPA on a separate host
 
 - How to integrate with LDAP?
   - [IPA](http://freeipa.org) (Identity Policy Audit) is an integrated solution developed by [Red Hat](http://www.redhat.com) that wraps an LDAP/DNS/NTP/Kerberos server together. It makes it easy to implement a kerberos solution and to get users access to a cluster. 
-
 
 - Setup details
   - We will be using a 2 VM setup: one with LDAP and one with HDP 2.3. In this example we will be using a single node HDP 2.3 setup installed via Ambari
   - The official 2.3 sandbox is not being used as it already has Ranger installed.
 
 ####  Part 0: Setup and start LDAP Virtual Machine
-- Install Centos 6.5 on on VM and setup FreeIPA using steps [here](https://github.com/abajwa-hw/security-workshops/blob/master/Setup-LDAP-IPA.md)
+- Install Centos 6.5 on on VM and setup FreeIPA using steps
+
+Create a new CentOS VM. Follow the Steps from Lab 1 to create the CentOS VM.
+
+Once you are logged in. Create CentOS VM
+
+<pre></code> 
+yum install -y git
+cd ~
+git clone https://github.com/abajwa-hw/security-workshops
+
+#configure/run script to install/start IPA server
+~/security-workshops/scripts/run_setupFreeIPA.sh
+
+# (Optional) configure/run script to import groups/users and their kerberos princials
+~/security-workshops/scripts/run_FreeIPA_importusers.sh
+</code>
+</pre>
        
 #### Part 1: Authentication                       
 - Setup HDP 2.3 and configure kerberos using principals in IPA server using instructions [here](https://github.com/abajwa-hw/security-workshops/blob/master/Setup-kerberos-IPA-23.md)
