@@ -86,8 +86,29 @@ Use the Dockerfile in the repo to create a CentOS image for HDP Slave Node
 </code> </pre>
 #  Install Slave Node on the docker images
 
++ Under the Hosts -> Actions
+![Add Hosts](/images/Screen%20Shot%202015-10-11%20at%2010.48.10%20PM.png)
+
++ Choose the name of the host. In our lab case it is <b><code>node0</code></b>Select you private ssh key [log into the docker container, cat the id_rsa key and provide the information under Provide your ssh key. I
+![Put the node information](/images/Screen%20Shot%202015-10-11%20at%2010.52.10%20PM.png) 
+
++ Ignore the host checks for the lab. (Please take care in your actual lab sessions)
+
+![Warning](/images/Screen Shot 2015-10-11 at 10.54.42 PM.png) 
+
++ Select the service (Select atleast the DataNode and NodeManager)
+ ![](/images/Screen Shot 2015-10-11 at 10.55.04 PM.png)
+
++ Click Next and start the install process
+![Install](/images/Screen Shot 2015-10-11 at 10.55.48 PM.png)
+![Install](/images/Screen%20Shot%202015-10-11%20at%2010.58.00%20PM.png)
+![install](/images/Screen Shot 2015-10-11 at 10.58.07 PM.png)
 
 
+
++ Use the Ambari wizard to add this host. 
+
+## Issues and Resolution
 #### Setup the ssh keys
 <pre>
 <code>
@@ -101,15 +122,7 @@ $ ifconfig
 +  Add an entry for node0 to the host /etc/host file
 + Update /etc/hosts/ file for <b>node0</b> Docker Container  for ip address mapping for hdpdemo.hortonworks.com
 
-
-+ Use the Ambari wizard to add this host. 
-
-## Issues and Resolution
-
 Services on the node may fail to start. It looks for /usr/java/default which is missing. Create an appropriate link to /usr/java/default 
-
-
-
 
 # Docker Reference Commands
 +  Stop a container
