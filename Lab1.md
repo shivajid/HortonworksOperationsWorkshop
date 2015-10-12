@@ -83,7 +83,7 @@ Password: admin
 ![Ambari login](/images/Screen%20Shot%202015-10-11%20at%2012.47.16%20PM.png)
 
 + Welcome: Specify the name of your cluster. Lets call it <b>hdpdemo</b>
-![Create your Cluster](images/Screen Shot 2015-10-11 at 12.47.33 PM.png)
+![Create your Cluster](/images/Screen Shot 2015-10-11 at 12.47.33 PM.png)
 
 + Select the name of the cluster as HDP Demo
 
