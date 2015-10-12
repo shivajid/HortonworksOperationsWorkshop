@@ -3,9 +3,13 @@
 In this step we will start creating the HDP Compute Cluster. We will create VM with CentOS 6.7. Deploy HDP 2.3 with Ambari 2.1 on a single node. 
 
 There are 2 modes of doing this lab
+<pre>
+
 a) On local CentOS VM (Shared in the page)
 b) On Azure trial Account. Follow the Azure Market place to create a Azure VM.
-c) CentOS Docker Image. Use the DockerFile in the github.
+c) CentOS Docker Image
+
+</pre>
 
 All three of the above versions will create a CentOS image to run your labs on. The refernce document for Installing HDP is in the official Hortonworks documentation
 
