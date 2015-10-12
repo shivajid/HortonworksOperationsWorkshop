@@ -37,7 +37,7 @@ You should be able to use the same password for your <b><code>root</code></b> us
 
 ### Installation Steps
 
-+ Using a terminal <code>ssh<code> into the machine as root. 
++ Using a terminal <code>ssh</code> into the machine as root. 
 
 + Get the ipaddress of the machine
 
