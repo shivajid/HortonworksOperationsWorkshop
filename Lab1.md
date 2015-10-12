@@ -1,4 +1,5 @@
-## HDP CentOS Node
+## HDP2.3 Installation on Single Node CentOS
+
 In this step we will start creating the HDP Compute Cluster. We will create VM with CentOS 6.7. Deploy HDP 2.3 with Ambari 2.1 on a single node. 
 
 There are 2 modes of doing this lab
@@ -18,6 +19,7 @@ Following Lab Instructions are on CentOS VM. These instructions are for referenc
 
 Assign CPU - 4cores
 Assign RAM - 10GB
+Assign Disk - 40 GB
 
 + Download the CentOS 6.7 Iso
 https://www.dropbox.com/s/njx0zwmic7og6db/CentOS-6.7-x86_64-bin-DVD1.iso?dl=0
