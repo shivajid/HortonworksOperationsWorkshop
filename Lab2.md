@@ -42,8 +42,7 @@ Ensure Docker is running as a service
   sudo chkconfig docker on
 </pre></code>
 
-### Boot2Docker for Mac
-  https://docs.docker.com/mac/step_one/
+
 
 ## Create Docker images 
 
