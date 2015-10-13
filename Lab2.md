@@ -79,11 +79,17 @@ Use the Dockerfile in the repo to create a CentOS image for HDP Slave Node
 
 +  User CTRL (P+Q) to exit the container. <b>Do not use exit</b> command.
 
+
+
 + List all the running containers
 <pre><code>
   $docker ps
 </code> </pre>
 
++ Re-enter the docker
+   <pre><code>
+      $ docker exec -it __docker_container_name__
+   </code></pre>
 
 #### Setup the ssh keys
 <pre>
