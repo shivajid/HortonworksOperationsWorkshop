@@ -92,7 +92,7 @@ Password: admin
 
 + Select the name of the cluster as HDP Demo
 
-!(images/Screen Shot 2015-10-11 at 12.47.50 PM.png)
+![HDP](/images/Screen Shot 2015-10-11 at 12.47.50 PM.png)
 Click Next
 
 + Select Stack: Select the HDP 2.3 stack.
