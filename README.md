@@ -19,3 +19,8 @@ Welcome to hortonworks operations lab. The labs are devided into 3 parts
 
 + [Nifi Tutorial](https://github.com/shivajid/ambari-nifi-service)
 
+Contact - Shivaji Dutta
+Email - sdutta@hortonworks.com
+Linkedin - https://www.linkedin.com/in/shivajidutta
+
+
