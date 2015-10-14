@@ -14,4 +14,9 @@ Welcome to hortonworks operations lab. The labs are devided into 3 parts
 
 + [Lab1] (IOTDemo.md) - In this lab you will setup the lab for Trucking Demo
 + [Lab 2] (https://github.com/shivajid/iot-masterclass) - This is a 4 part Series Lab. That will help you code and build up th trucking demo.
++ 
+
+# Apache Nifi
+
++ [Nifi Tutorial]https://github.com/shivajid/ambari-nifi-service
 
