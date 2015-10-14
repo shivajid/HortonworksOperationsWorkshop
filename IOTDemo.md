@@ -1,6 +1,6 @@
 ##Objective
 
-The Objective of this lab is to have a trucking demo up and running.
+The Objective of this lab is to have the trucking demo up and running.
 
 ### Prerequsites:
 
