@@ -72,6 +72,9 @@ If you get error building this
 
 cd ../iot-truck-streaming
 
+ rerun
+ 	./installdemo.sh
+
 </pre>
 
 
