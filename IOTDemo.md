@@ -29,9 +29,11 @@ The Objective of this lab is to have the trucking demo up and running.
 </pre>
 
 ## Instructions to install demo:
- -  Install git
+ -  Install git:
+ 	<pre>
  		yum -y install git
- 		
+ 	</pre>
+
 - copy the demo's directory (iot-truck-streaming/) to the local filesystem under /root
 
 - make the scripts executable:
@@ -42,7 +44,7 @@ The Objective of this lab is to have the trucking demo up and running.
 </pre>
 
 - update config.properties with host names where your services run,  including the names of the supervisor nodes
-	- NOTE: the demo will pick up the version of config.properties in /etc/storm_demo at runtime
+	- NOTE: the demo will pick up the version of config.properties in etc/storm_demo at runtime
 
 - update variables defined at the top in user-env.sh
 	-user is ambari user (admin)
