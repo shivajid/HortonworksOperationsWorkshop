@@ -8,3 +8,10 @@ Welcome to hortonworks operations lab. The labs are devided into 3 parts
           You could add more nodes and expand your cluster.
 
 + [Lab 3](Lab3.md) - Add Kerberos with FreeIPA
++
+
+# IOTDemo
+
++ ![Lab1] (IOTDemo.md) - In this lab you will setup the lab for Trucking Demo
++ [Lab 2] (https://github.com/shivajid/iot-masterclass) - This is a 4 part Series Lab. That will help you code and build up th trucking demo.
+
