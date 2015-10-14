@@ -38,11 +38,6 @@ The Objective of this lab is to have the trucking demo up and running.
 git clone https://github.com/shivajid/iot-truck-streaming.git
 </pre>
 
-If you get error building this
-<pre>
- git clone https://github.com/DhruvKumar/hadoop-mini-clusters
-	mvn clean install -DskipTests
-</pre>
 
 - copy the demo's directory (iot-truck-streaming/) to the local filesystem under /root
 
@@ -63,10 +58,23 @@ If you get error building this
 	-host is the ambari url, eg: hdpdemo.hortonworks.comt:8080
 
 - Execute the script installdemo.sh
+	<pre>
 		./installdemo.sh
-		
+	</pre>	
 	(If the script is stuck trying to Stop Falcon. You would need to stop Falcon from Ambari.)
 	
+If you get error building this
+<pre>
+ cd 
+ git clone https://github.com/DhruvKumar/hadoop-mini-clusters
+ cd hadoop-mini-cluster
+	mvn clean install -DskipTests
+
+cd ../iot-truck-streaming
+
+</pre>
+
+
 - source root's bashrc ". /root/.bashrc"
 
 - If on sandbox, run 'rundemo.sh clean', else run 'rundemo.sh'
