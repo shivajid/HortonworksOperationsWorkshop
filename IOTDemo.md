@@ -34,7 +34,13 @@ The Objective of this lab is to have the trucking demo up and running.
  		yum -y install git
  	</pre>
 -  git clone https://github.com/shivajid/iot-truck-streaming.git
--
+
+If you get error building this - Clone the below repo
+
+- https://github.com/DhruvKumar/hadoop-mini-clusters
+- Build this
+- 	mvn clean install -DskipTests
+
 - copy the demo's directory (iot-truck-streaming/) to the local filesystem under /root
 
 - make the scripts executable:
