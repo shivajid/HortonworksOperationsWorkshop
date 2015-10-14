@@ -5,21 +5,21 @@ The Objective of this lab is to have the trucking demo up and running.
 ### Prerequsites:
 
 <pre>
-1) The setup scripts for the demo must be run from the Ambari machine. For the lab please run it on sandbox.hortonworks.com.
+1) The setup scripts for the demo must be run from the Ambari machine. 
+	- <b>For the lab please run it on sandbox.hortonworks.com. </b>
 
-2) Demo will be installed and run under the root user.
+2) Demo will be installed and run under the <b>root</b> user.
 
-3) wget must be available.
-	Check if you have wget running, else execute:
-		$ yum -y install wget
+3) Install wget
+	$ yum -y install wget
 
-6) Start HBase and Storm, if not running.
+4) Navigate to http://sandbox.hortonworks.com:8080 and check if HBase and Storm are up and running. If it is not running, please update it.
 
-7) Turn off maintenace mode for HBase, Storm, Kafka, Falcon and Spark.
+5) Turn off maintenace mode for HBase, Storm, Kafka, Falcon and Spark.
 
-9) If running on sandbox:
-	- ensure there is at least 8GB of RAM assigned to VM
-	- ensure the hosts file is correct: in /etc/hosts, ensure hostname (e.g. sandbox.hortonworks.com) is mapped to actual IP of VM instead of 127.0.0.1
+6) If running on sandbox:
+	- Assign 8GB of RAM assigned to VM
+	- Update the /etc/hosts file is correct with the host to ip address mapping.
 </pre>	
 
 - set JAVA_HOME, if not set.
