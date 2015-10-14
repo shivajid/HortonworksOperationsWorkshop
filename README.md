@@ -17,5 +17,5 @@ Welcome to hortonworks operations lab. The labs are devided into 3 parts
 
 # Apache Nifi
 
-+ [Nifi Tutorial]https://github.com/shivajid/ambari-nifi-service
++ [Nifi Tutorial](https://github.com/shivajid/ambari-nifi-service)
 
