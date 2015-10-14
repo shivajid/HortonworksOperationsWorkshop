@@ -1,35 +1,41 @@
+##Objective
+
+The Objective of this lab is to have a trucking demo up and running.
+
 ### Prerequsites:
 
-
 <pre>
-1) The setup scripts for the demo must be run from the Ambari machine
+1) The setup scripts for the demo must be run from the Ambari machine. For the lab please run it on sandbox.hortonworks.com.
 
-2) Demo will be installed and run under the root user
+2) Demo will be installed and run under the root user.
 
-3) wget must be available
+3) wget must be available.
+	Check if you have wget running, else execute:
+		$ yum -y install wget
 
-6) Ensure HBase and Storm are up
+6) Start HBase and Storm, if not running.
 
-7) Turn off Maintenace mode for HBase, Storm, Kafka, Falcon and Spark.
+7) Turn off maintenace mode for HBase, Storm, Kafka, Falcon and Spark.
 
 9) If running on sandbox:
 	- ensure there is at least 8GB of RAM assigned to VM
 	- ensure the hosts file is correct: in /etc/hosts, ensure hostname (e.g. sandbox.hortonworks.com) is mapped to actual IP of VM instead of 127.0.0.1
 </pre>	
 
-- set JAVA_HOME if not set.
+- set JAVA_HOME, if not set.
 
 <pre>
 
 </pre>
 
-Instructions to install demo:
+## Instructions to install demo:
  -  Install git
  		yum -y install git
  		
 - copy the demo's directory (iot-truck-streaming/) to the local filesystem under /root
 
 - make the scripts executable:
+- 
 <pre>  
   cd iot-truck-streaming/
   chmod 750 *.sh setup/bin/*.sh
